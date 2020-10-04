@@ -4,6 +4,10 @@ module.exports = {
     browser: true,
     node: true,
   },
+  globals: {
+    test: 'readonly',
+    fixture: 'readonly',
+  },
   extends: [
     '@nuxtjs/eslint-config-typescript',
     'prettier',

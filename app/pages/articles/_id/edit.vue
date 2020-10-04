@@ -77,7 +77,7 @@ export default class ArticleEditPage extends Vue {
     await this.$store
       .dispatch('article/updateArticle', params)
       .then(() => {
-        this.$router.push(`/articles/${this.$route.params.id}/detail`)
+        this.$router.push(`/articles/${this.$route.params.id}`)
       })
       .finally(() => {
         this.loading = false

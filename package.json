@@ -9,7 +9,8 @@
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js",
-    "test": "jest"
+    "testcafe": "testcafe chrome app/test/test.ts",
+    "test:lambdatest": "testcafe 'lambdatest:chrome@79:macOS Mojave' app/test/test.ts"
   },
   "dependencies": {
     "@nuxt/content": "^1.5.3",
@@ -19,6 +20,7 @@
     "js-cookie": "^2.2.1",
     "nuxt": "^2.14.1",
     "nuxt-property-decorator": "^2.7.2",
+    "testcafe-browser-provider-lambdatest": "^2.0.3",
     "vuex-persistedstate": "^3.1.0"
   },
   "devDependencies": {
@@ -38,6 +40,8 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.2.2",
     "prettier": "^2.0.5",
+    "testcafe": "^1.9.2",
+    "testcafe-browser-provider-browserstack": "^1.13.0",
     "ts-jest": "^26.1.4",
     "vue-jest": "^3.0.6"
   }

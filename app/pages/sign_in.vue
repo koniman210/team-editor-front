@@ -32,6 +32,7 @@
       </v-form>
       <v-btn
         color="#f96204"
+        type="submit"
         block
         depressed
         :loading="loading"

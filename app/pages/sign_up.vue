@@ -6,6 +6,7 @@
       <v-form ref="nameForm" @submit.prevent>
         <v-text-field
           v-model="name"
+          type="name"
           name="nickname"
           label="ニックネーム"
           data-vv-name="name"
@@ -46,6 +47,7 @@
       </v-form>
 
       <v-btn
+        type="submit"
         color="#f96204"
         block
         depressed

@@ -6,6 +6,7 @@
         <router-link :to="`articles/${article.id}`">
           {{ article.title }}</router-link
         >
+        {{ article.user.name }}
       </li>
       <router-link :to="`articles/${article.id}/edit`">編集</router-link>
       <hr />

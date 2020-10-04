@@ -5,7 +5,7 @@
       <v-form ref="titleForm" @submit.prevent>
         <v-text-field
           v-model="title"
-          type="text"
+          type="title"
           name="title"
           label="タイトル"
           data-vv-name="title"
@@ -20,7 +20,7 @@
           v-model="content"
           class="textarea"
           value="value"
-          type="text"
+          type="content"
           rows="5"
           name="content"
           label="本文"
@@ -35,6 +35,7 @@
       <v-btn
         color="cyan"
         elevation="4"
+        type="submit"
         ripple
         block
         depressed
